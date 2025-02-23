@@ -212,7 +212,8 @@ git clone https://github.com/jingyaogong/minimind.git
 ### 1.环境准备
 
 ```bash
-pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+# https://pypi.tuna.tsinghua.edu.cn/simple 原来的这个可能会报403
+pip install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple
 ```
 
 ### 2.下载模型
