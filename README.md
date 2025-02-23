@@ -270,6 +270,11 @@ print(torch.cuda.is_available())
 
 数据文件可自由选择，下文提供了多种搭配方案，可根据自己手头的训练需求和GPU资源进行适当组合。
 
+```bash
+# 使用wget下载公开数据集
+wget https://www.modelscope.cn/datasets/gongjy/minimind_dataset/resolve/master/sft_mini_512.jsonl -O dataset/sft_mini_512.jsonl
+```
+
 </details>
 
 ### 3.开始训练
