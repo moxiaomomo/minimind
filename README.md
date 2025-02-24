@@ -292,7 +292,8 @@ python train_pretrain.py --device cuda:0
 **3.2 监督微调（学对话方式）**
 
 ```bash
-python train_full_sft.py
+# 确定有用到gpu(本地RTX4070TiSuper 16GB, 实测用了约1.5小时)
+python train_full_sft.py --device cuda:0
 ```
 
 > 执行监督微调，得到 `full_sft_*.pth` 作为指令微调的输出权重（其中`full`即为全参数微调）
