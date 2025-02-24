@@ -282,7 +282,8 @@ wget https://www.modelscope.cn/datasets/gongjy/minimind_dataset/resolve/master/s
 **3.1 预训练（学知识）**
 
 ```bash
-python train_pretrain.py
+# 确定有用到gpu
+python train_pretrain.py --device cuda:0
 ```
 
 > 执行预训练，得到 `pretrain_*.pth` 作为预训练的输出权重（其中*为模型的dimension，默认为512）
