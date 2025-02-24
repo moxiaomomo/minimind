@@ -282,7 +282,7 @@ wget https://www.modelscope.cn/datasets/gongjy/minimind_dataset/resolve/master/s
 **3.1 预训练（学知识）**
 
 ```bash
-# 确定有用到gpu
+# 确定有用到gpu(本地RTX4070TiSuper 16GB, 实测用了约2.5小时)
 python train_pretrain.py --device cuda:0
 ```
 
